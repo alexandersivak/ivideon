@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.25)	
+project(client)
+set(SOURCE_FILES ${CMAKE_CURRENT_SOURCE_DIR}/client/client.cpp)
+add_executable(LEDClient ${SOURCE_FILES})
+set(CMAKE_CXX_STANDARD 17)
+set(BOOST_DIR F:\\cpp\\boost\\boost_1_81_0)
+set(INCLUDE_DIRS ${BOOST_DIR})
+target_include_directories(LEDClient PRIVATE ${INCLUDE_DIRS} )
